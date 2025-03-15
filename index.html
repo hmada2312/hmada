@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>لعبة الأسئلة</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="quiz-container">
+        <h1>لعبة الأسئلة</h1>
+        <p id="timer">الوقت المتبقي: <span id="time">30</span> ثوانٍ</p>
+        <p id="question">تحميل السؤال...</p>
+        <div id="answers"></div>
+        <button id="next" onclick="nextQuestion()" disabled>السؤال التالي</button>
+        <button id="restart" onclick="restartGame()" style="display: none;">إعادة اللعب</button>
+        <p id="score" style="display: none;">نتيجتك: <span id="final-score"></span></p>
+        <button id="restart" onclick="restartGame()" style="display: none;">إعادة اللعب</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
